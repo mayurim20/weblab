@@ -1,0 +1,100 @@
+<html>
+<head>
+<script>
+function validation()
+{
+var name = 
+         document.forms["f1"]["t1"];
+var age = 
+         document.forms["f1"]["t2"];
+var address =
+          document.forms["f1"]["a1"];
+var mobile =
+          document.forms["f1"]["t4"];
+var email = 
+          document.forms["f1"]["t5"];
+var password = 
+          document.forms["f1"]["t6"];
+
+if(name.value ==""){
+window.alert("Name cannot be blank");
+name.focus();
+return false;
+}
+if(age.value ==""){
+window.alert("Age cannot be blank");
+age.focus();
+return false;
+}
+if(address.value ==""){
+window.alert("address cannot be blank");
+address.focus();
+return false;
+}
+if(mobile.value ==""){
+window.alert(" mobile cannot be blank");
+mobile.focus();
+return false;
+}
+if(email.value ==""){
+window.alert("email cannot be blank");
+email.focus();
+return false;
+}
+if(password.value ==""){
+window.alert("password cannot be blank");
+password.focus();
+return false;
+}
+return true;
+}
+</script>
+<style type="text/css">
+body{
+
+padding-left: 11em;
+font-family: Georgia, "Times New Roman",
+          Times, serif;
+color:red;
+
+ background-image: url('sky1.jpg');
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+  background-size: cover;}
+td
+{
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+height: 75px;
+}
+h1
+{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+color: red;
+}
+</style>
+</head>
+<body>
+<form name="f1" action="" onsubmit="return validation()">
+<table>
+<tr><td>Name:</td><td><input type="text"name="t1"><br></td></tr><br>
+<tr><td>Age:</td><td><input type="text"name="t2"><br></td></tr><br>
+<tr><td>Address:</td><td><textarea row="4" cols="50" name="a1" ></textarea><br></td></tr>
+<tr><td>Educational Qualification:</td><td>
+<select>
+<option>select Course
+<option>BTECH
+<option>BCA
+<option>BSC
+<option>OTHERS
+</select><br></td></tr>
+<tr><td>Mobile no:</td><td><input type="text"name="t4"><br></td></tr>
+<tr><td>Email:</td><td><input type="text"name="t5"><br></td></tr>
+<tr><td>Password:</td><td><input type="password"name="t6"><br></td></tr><br>
+<p><tr><td><center><input type="submit" name="submit" value="Login"></p>
+
+</table>
+</form>
+</body>
+</html>

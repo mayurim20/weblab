@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+function setnewImage(){
+document.getElementById("img1").src="sunrise.jpeg";
+document.getElementById("demo").innerHTML = "Sunrise (or sunup) is the moment when the upper rim of the Sun appears on the horizon ";
+}
+function setoldImage(){
+document.getElementById("img1").src="sunset.jpg";
+document.getElementById("new").innerHTML = " At sunrise and sunset, when the path through the atmosphere is longer, the blue and green components are removed almost completely leaving ...";
+}
+</script>
+</head>
+<body bgcolor='lightcyan'>
+<p id="demo"></p>
+<h3 id="new"></h3>
+<img id="img1" onmouseover="setnewImage()" onmouseout="setoldImage()" src="sunset.jpg" width='400' height='400'/>
+</body>
+</html>
